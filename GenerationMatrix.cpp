@@ -83,7 +83,7 @@ void GenerationMatrix::changeAppleColor(int i, int j, int greenNeighboursCount) 
     //green apples
     if (generationMatrix[i][j].getColor()) {
         if (greenNeighboursCount == 0 || greenNeighboursCount == 1 || greenNeighboursCount == 4
-            || greenNeighboursCount == 5 || greenNeighboursCount == 7) temp[i][j].setColor(0);
+            || greenNeighboursCount == 5 || greenNeighboursCount == 7 || greenNeighboursCount == 8) temp[i][j].setColor(0);
 
         //increases counter only if the green apple has 2, 3 or 6 adjacent green apples
         else if (i == getX1() && j == getY1()) counter++;
